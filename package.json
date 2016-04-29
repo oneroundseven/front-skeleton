@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/oneroundseven/front-skeleton/issues"
   },
-  "homepage": "https://github.com/oneroundseven/front-skeleton"
+  "homepage": "https://github.com/oneroundseven/front-skeleton",
+  "dependencies": {
+    "compass": "^0.1.1"
+  }
 }
