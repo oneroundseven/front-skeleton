@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="zepto" basedir=".">
+    <target name="zepto">
+        <concat destfile="zepto.js" encoding="utf-8" outputencoding="utf-8" fixlastline="yes">
+            <path path="zepto.min.js" />
+            <path path="../fastclick/fastclick-min.js" />
+            <path path="zepto.cookie.min.js" />
+        </concat>
+    </target>
+</project>
