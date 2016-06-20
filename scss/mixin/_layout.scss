@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/**
+ *双分栏布局
+ * $leftW 左分栏宽度
+ * $rightW 右分栏宽度
+ */
+@mixin double_split ($leftW, $rightW) {
+    position:relative;
+
+    .split_left, .split_right {
+        font-size:0;
+        display:inline-block;
+        @if $leftW == 0 and $rightW == 0 {
+            width: 50%;
+        }
+    }
+
+    @if $leftW != 0 and $rightW == 0 {
+        padding-left: $leftW;
+
+        .split_left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $leftW;
+        }
+
+        .split_right {
+            width: 100%;
+        }
+    }
+
+    @if $leftW == 0 and $rightW != 0 {
+        padding-right: $rightW;
+
+        .split_right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: $rightW;
+        }
+
+        .split_left {
+            width: 100%;
+        }
+    }
+}
+
+
+/**
+ * 水平排列
+ */
+@mixin layout_line ($child, $fontSize) {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+
+    #{$child} {
+        display: inline-block;
+        font-size: $fontSize;
+    }
+}
+
+/**
+ * 图片垂直居中
+ */
+@mixin image_center {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
