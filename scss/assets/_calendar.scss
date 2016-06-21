@@ -1,0 +1,51 @@
+@import "../base/var";
+
+$calendar-color-border: #CED3D9;
+$calendar-color-shadow: rgba(0, 33, 66, .1);
+
+$calendar-color-selected-font: #FFF;
+$calendar-color-selected-bg: $color-blue;
+
+$calendar-color-hover-font: $color-black;
+$calendar-color-hover-bg: #E6ECF2;
+
+$calendar-color-normal-font: #FFF;
+$calendar-color-normal-bg: $color-blue;
+
+$calendar-color-action: $color-blue;
+$calendar-color-arrow: #000;
+$calendar-color-hover-arrow: rgba(0, 0, 0, .5);
+
+@mixin calendar ($tag) {
+    .#{$tag} {
+        display: flex;
+        padding:10px;
+        border: 1px solid $calendar-color-border;
+        box-shadow: 2px 2px 1px 0 $calendar-color-shadow;
+        border-radius: 2px;
+
+        .#{$tag}-item {
+            float: left;
+            padding: 8px 10px;
+            background-color: $calendar-color-normal-bg;
+            color: $calendar-color-normal-font;
+
+            &:hover {
+                background-color: $calendar-color-hover-bg;
+                color: $calendar-color-hover-font;
+            }
+
+            &.selected {
+                background-color: $calendar-color-selected-bg;
+                color: $calendar-color-selected-font;
+            }
+
+            &:after {
+                content: '';
+                clear: both;
+            }
+        }
+    }
+}
+
+@include calendar('calendar');

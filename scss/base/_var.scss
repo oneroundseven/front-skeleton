@@ -1,11 +1,26 @@
 
 // base color
 
-$red:       #e62e2e !default;
-$border:    #e2e2e2 !default;
-$h-border:  #b2b2b2 !default;
-$page-max-width:  1080px !default;
-$icon-size: 20px;
-$icon-size: 2rem;
+$color-red: #e54545;
+$color-blue: #1470CC;
+$color-yellow: #ff7733;
 
-$content-color: #FFF;
+$color-black: #555;
+$color-black-dark: #222;
+$color-black-light: #888;
+
+$color-purple: #6212B3;
+
+// extend color
+
+$color-main: $color-red;
+$color-accent-A: $color-blue;
+$color-accent-B: $color-yellow;
+
+$text-color: $color-black;
+$text-color-dark: $color-black-dark;
+$text-color-light: $color-black-light;
+
+$link-color: $color-accent-A;
+$link-color-hover: $color-accent-B;
+$link-color-visited: $color-purple;

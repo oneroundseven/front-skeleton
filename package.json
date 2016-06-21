@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/oneroundseven/front-skeleton",
   "dependencies": {
-    "browser-sync": "^2.12.8"
+    "autoprefixer": "^6.3.6",
+    "browser-sync": "^2.12.8",
+    "webpack": "^1.13.1"
   }
 }
