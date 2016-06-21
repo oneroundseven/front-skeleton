@@ -1,0 +1,18 @@
+@import "/fonts/micon/font";
+@import "/fonts/Roboto/font";
+
+%base-icon {
+    font-family: 'Mic-icon';
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    font-size: 16px;
+    line-height: 1;
+    margin-right: 5px;
+    vertical-align: middle;
+    text-decoration: none !important;
+}

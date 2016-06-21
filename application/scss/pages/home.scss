@@ -1,15 +1,17 @@
+@import "../base/base";
+@import "../assets/form";
+
+
 body {
-    color:red; font-size:12px; font-weight:bold; font-family:Arial;
-
-    p {
-        color:green;
+    .ob-form {
+        @include form;
+        width:200px;
+        font-family: 'Roboto-Bold';
     }
 
-    h1{
-        color:#ffff00;
-    }
-
-    footer{
-        padding:0;
+    .at-form {
+        @include form;
+        width:300px;
+        font-family: 'Roboto-Regular';
     }
 }

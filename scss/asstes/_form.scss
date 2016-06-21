@@ -5,9 +5,11 @@
 
 $form-margin-bottom: 12px;
 
-.form-item {
+@mixin test-form {
+    margin:0;
+    padding: 0;
 
-    .form-inline {
-
+    .form-item {
+        margin-bottom: $form-margin-bottom;
     }
 }

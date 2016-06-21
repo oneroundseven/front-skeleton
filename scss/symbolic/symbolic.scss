@@ -1,7 +1,10 @@
-.center {
+@import "../mixin/center";
+@import "../mixin/layout";
 
+.split {
+    @include layout_line('li', 14px);
 }
 
-.form {
-
+.image-center {
+    @include image_center;
 }
