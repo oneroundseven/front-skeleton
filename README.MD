@@ -1,5 +1,7 @@
 # SCSS结构说明
 
+![](http://i.imgur.com/MwjV7jc.png)
+
 ### Fonts
 
 1. 字体文件统一放置在common根目录下的fonts文件夹中；
