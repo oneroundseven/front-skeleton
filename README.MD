@@ -2,6 +2,12 @@
 
 ![](http://i.imgur.com/MwjV7jc.png)
 
+
+### scss 说明
+- mixin & include (一些常用结构可以套用，使用频率一个页面正常在5个以内的结构和样式)
+- %placeholder & extend (避免mixin方式生成过多冗余样式代码，正常特指一个页面或者一个功能使用频率相当高的)
+- class & extend (不推荐)
+
 ### Fonts
 
 1. 字体文件统一放置在common根目录下的fonts文件夹中；
