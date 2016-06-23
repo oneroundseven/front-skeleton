@@ -31,7 +31,6 @@
   *zoom: 1;
   font-size: 16px;
   line-height: 1;
-  margin-right: 5px;
   vertical-align: middle;
   text-decoration: none !important;
 }
@@ -52,10 +51,6 @@
  * Roman Numbers
  * i: 1, ii: 2, iii: 3, iv: 4, v: 5, vi: 6, vii: 7, viii: 8, ix: 9, x: 10
  */
-.hide {
-  display: none !important;
-}
-
 .calendar {
   padding: 15px;
   width: 245px;
@@ -94,17 +89,31 @@
 .calendar .calendar-header .next {
   left: inherit;
   right: 0;
+  text-align: right;
 }
 .calendar.split-cols2 {
   width: 510px !important;
   font-size: 0;
 }
-.calendar.split-cols2 .calendar-split {
+.calendar.split-cols3 {
+  width: 775px !important;
+  font-size: 0;
+}
+.calendar .calendar-split {
   display: inline-block;
   margin-left: 20px;
 }
-.calendar.split-cols2 .calendar-split:first-child {
+.calendar .calendar-split .pre, .calendar .calendar-split .next {
+  display: none;
+}
+.calendar .calendar-split:first-child {
   margin-left: 0;
+}
+.calendar .calendar-split:first-child .pre {
+  display: block;
+}
+.calendar .calendar-split:last-of-type .next {
+  display: block;
 }
 .calendar .calendar-weeks, .calendar .calendar-days {
   margin: 0;
