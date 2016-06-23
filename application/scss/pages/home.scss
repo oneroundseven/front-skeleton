@@ -1,4 +1,4 @@
-@import "../base/base";
+@import "${{path.common}}/base/base";
 @import "../assets/form";
 
 
@@ -15,3 +15,5 @@ body {
         font-family: 'Roboto-Regular';
     }
 }
+
+

@@ -1,11 +1,8 @@
-@import "../../fonts/Roboto/font";
-@import "../../fonts/micon/font";
+@import "../base/font";
 @import "calendar";
 
 .calendar {
     font-family: 'Roboto-Regular';
+    margin: 20px;
 }
 
-:fullscreen a {
-    display: flex;
-}

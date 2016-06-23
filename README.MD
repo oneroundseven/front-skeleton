@@ -10,9 +10,26 @@
 
 ### Fonts
 
-1. 字体文件统一放置在common根目录下的fonts文件夹中；
-2. 字体文件分类分文件夹管理；
-3. 每个文件夹中有各自独立的_font.scss用于管理自身字体相关版本引用及默认字体样式；
+- 字体文件统一放置在common根目录下的fonts文件夹中；
+	- 字体实现全部使用content方式，IE67浏览器使用背景图方式实现;
+	- 禁止在html中直接使用字体图标实体编码;
+````css
+.add {
+    &:after, &::after {
+        content: '';
+    }
+}
+
+````
+````css
+// IE6-7.hack.css
+.add {
+	background-image: url();
+	background-position: 0, 0;
+}
+````
+- 字体文件分类分文件夹管理；
+- 每个文件夹中有各自独立的_font.scss用于管理自身字体相关版本引用及默认字体样式；
 ````css
 @font-face {
     font-family: 'Roboto-Regular';

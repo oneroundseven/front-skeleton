@@ -1,5 +1,5 @@
-@import "/fonts/micon/font";
-@import "/fonts/Roboto/font";
+@import "../../fonts/micon/font";
+@import "../../fonts/Roboto/font";
 
 %base-icon {
     font-family: 'Mic-icon';
@@ -16,3 +16,20 @@
     vertical-align: middle;
     text-decoration: none !important;
 }
+
+.icon {
+    @extend %base-icon;
+
+    &.icon-left {
+        &:before, &::before {
+            content: '\e009';
+        }
+    }
+
+    &.icon-right {
+        &:before, &::before {
+            content: '\e008';
+        }
+    }
+}
+
