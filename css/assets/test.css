@@ -101,6 +101,8 @@
 }
 .calendar .calendar-split {
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   margin-left: 20px;
 }
 .calendar .calendar-split .pre, .calendar .calendar-split .next {
@@ -149,6 +151,7 @@
 .calendar .calendar-days {
   margin-top: 5px;
   width: 245px;
+  clear: both;
 }
 .calendar .calendar-days .calendar-item {
   background-color: #F5F7FA;
@@ -190,6 +193,8 @@
 }
 .calendar .calendar-footer .calendar-area {
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   padding: 0 5px;
   margin-right: 5px;
   border: 1px solid #CED3D9;

@@ -81,6 +81,8 @@ $calendar-grid-font-size: 12px;
 
         .#{$tag}-split {
             display: inline-block;
+            *display:inline;
+            *zoom:1;
             margin-left: 20px;
 
             .pre, .next {
@@ -137,6 +139,7 @@ $calendar-grid-font-size: 12px;
         .#{$tag}-days {
             margin-top: 5px;
             width: 7 * $calendar-grid-width;
+            clear: both;
 
             .#{$tag}-item {
                 background-color: $calendar-color-normal-bg;
@@ -187,6 +190,8 @@ $calendar-grid-font-size: 12px;
 
             .#{$tag}-area {
                 display: inline-block;
+                *display:inline;
+                *zoom:1;
                 padding: 0 5px;
                 margin-right: 5px;
                 border: 1px solid $color-brush-medium;
