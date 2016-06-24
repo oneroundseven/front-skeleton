@@ -9,7 +9,25 @@
 - class & extend (不推荐)
 
 ### 样式规范
-- 不使用驼峰式命名方式，全部用单独加 "-" 方式命名；
+- 不使用驼峰式命名方式，全部用单词加 "-" 方式命名；
+````css
+/*
+ * extend color
+ * Roman Numbers
+ * i: 1, ii: 2, iii: 3, iv: 4, v: 5, vi: 6, vii: 7, viii: 8, ix: 9, x: 10
+ */
+$color-main: $color-red;
+$color-aux-i: $color-blue;
+$color-aux-ii: $color-yellow;
+
+$text-color-dark: $color-black-dark;
+$text-color: $color-black;
+$text-color-light: $color-black-light;
+
+$link-color: $color-blue;
+$link-color-hover: $color-yellow;
+$link-color-visited: $color-purple;
+````
 - 常用功能样式命名；
 ````css
 // [mini, tiny, small, medium, large, big, huge, massive]
