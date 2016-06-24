@@ -8,6 +8,23 @@
 - %placeholder & extend (避免mixin方式生成过多冗余样式代码，正常特指一个页面或者一个功能使用频率相当高的)
 - class & extend (不推荐)
 
+### 样式规范
+- 不使用驼峰式命名方式，全部用单独加 "-" 方式命名；
+- 常用功能样式命名；
+````css
+// [mini, tiny, small, medium, large, big, huge, massive]
+````
+- 常用排序命名；
+````css
+// i: 1, ii: 2, iii: 3, iv: 4, v: 5, vi: 6, vii: 7, viii: 8, ix: 9, x: 10
+````
+- 常用状态命名；
+````css
+// disabled selected hover
+````
+
+
+
 ### Fonts
 
 - 字体文件统一放置在common根目录下的fonts文件夹中；
