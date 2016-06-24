@@ -35,10 +35,10 @@
   text-decoration: none !important;
 }
 
-.icon.icon-left:before, .icon.icon-left::before {
+.icon.icon-left:before {
   content: '\e009';
 }
-.icon.icon-right:before, .icon.icon-right::before {
+.icon.icon-right:before {
   content: '\e008';
 }
 
@@ -115,13 +115,16 @@
 .calendar .calendar-split:last-of-type .next {
   display: block;
 }
+.calendar .calendar-split .show {
+  display: block;
+}
 .calendar .calendar-weeks, .calendar .calendar-days {
   margin: 0;
   padding: 0;
   display: block;
   font-size: 12px;
 }
-.calendar .calendar-weeks::after, .calendar .calendar-days::after, .calendar .calendar-content::after {
+.calendar .calendar-weeks:after, .calendar .calendar-days:after, .calendar .calendar-content:after {
   *zoom: 1;
   content: "";
   display: table;
@@ -170,14 +173,14 @@
 .calendar .calendar-days .calendar-item.empty:hover {
   background-color: #FFF;
 }
-.calendar .current {
+.calendar .calendar-current {
   margin-top: 10px;
   color: #1470CC;
   text-align: center;
   line-height: 25px;
   vertical-align: middle;
 }
-.calendar .current .date {
+.calendar .calendar-current .date {
   margin-left: 5px;
 }
 .calendar .calendar-footer {

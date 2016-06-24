@@ -20,13 +20,13 @@
     @extend %base-icon;
 
     &.icon-left {
-        &:before, &::before {
+        &:before {
             content: '\e009';
         }
     }
 
     &.icon-right {
-        &:before, &::before {
+        &:before {
             content: '\e008';
         }
     }

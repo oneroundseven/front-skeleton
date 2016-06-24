@@ -95,6 +95,9 @@ $calendar-grid-font-size: 12px;
             &:last-of-type {
                 .next { display: block; }
             }
+
+            // IE8 fixer
+            .show { display: block; }
         }
 
 
@@ -105,7 +108,7 @@ $calendar-grid-font-size: 12px;
             font-size: $calendar-grid-font-size;
         }
 
-        .#{$tag}-weeks::after, .#{$tag}-days::after, .#{$tag}-content::after {
+        .#{$tag}-weeks:after, .#{$tag}-days:after, .#{$tag}-content:after {
             *zoom: 1;
             content: "";
             display: table;
@@ -165,7 +168,7 @@ $calendar-grid-font-size: 12px;
             }
         }
 
-        .current {
+        .#{$tag}-current {
             margin-top: 10px;
             color: $color-blue;
             text-align: center;
